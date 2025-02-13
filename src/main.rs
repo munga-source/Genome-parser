@@ -81,7 +81,7 @@ mod tests {
     #[test]
     #[should_panic]
     fn test_empty_string(){
-        let x = calculates_gc_content("");
+        let _x = calculates_gc_content("");
     
     }
 }
