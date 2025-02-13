@@ -54,12 +54,19 @@ fn parse_fasta<T: AsRef<Path>>(filename: T) -> io::Result<()> {
     Ok(())
 }
 
+use clap::Arg;
+
 fn main() -> std::io::Result<()> {
-    let fasta_file = std::env::args().nth(1);
-    match fasta_file {
-        None => println!("Please give file name"),
-        Some(file) => parse_fasta(file)?, // This should call the parse_fasta function
-    }
+    let cli = clap::Command::new("genome_parser");
+    let input_arg = Arg::new("input");
+    let input_arg = input_arg.help("Input filename in fasta format.").short('i').long("input").required(true);
+    let cli = cli.arg(input_arg).arg_required_else_help(true);
+
+    let matches = cli.get_matches();
+    let fasta_file = matches.get_one::<String>("input").unwrap();
+
+    parse_fasta(fasta_file)?; // This should call the parse_fasta function
+    
 
     Ok(())
 }
