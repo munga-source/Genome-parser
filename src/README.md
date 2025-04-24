@@ -12,7 +12,7 @@ A command-line tool written in Rust for summarizing genomic data in **FASTA**, *
   - Average MAPQ
 - Simple CLI interface
 
-## 🚀 Installation
+## Installation
 
 ### Option 1: Build from Source (requires Rust)
 
