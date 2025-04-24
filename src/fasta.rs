@@ -1,10 +1,13 @@
 use std::fs::File;
-use std::io::{self, BufRead};
+use std::io::{BufRead, BufReader};
 use std::path::Path;
+use anyhow::{Context, Result};
+
+
 
 /// Calculates the GC content of a DNA sequence
 
-fn calculates_gc_content(sequence: &str) -> f64 {
+pub fn calculates_gc_content(sequence: &str) -> f64 {
     let gc_count = sequence
         .chars()
         .filter(|&base| base == 'G' || base == 'C')
@@ -18,10 +21,11 @@ fn calculates_gc_content(sequence: &str) -> f64 {
 
 /// Parses a FASTA file and calculates statistics for each sequence.
 
-fn parse_fasta<T: AsRef<Path>>(filename: T) -> io::Result<()> {
-    let file = File::open(filename)?;
-    let reader = io::BufReader::new(file);
-
+pub fn parse_fasta<T: AsRef<Path>>(filename: T) -> Result<()> {
+    let file = File::open(&filename)
+        .with_context(|| format!("opening FASTA file {:?}", filename.as_ref()))?;
+    
+    let reader = BufReader::new(file);
     let mut header = String::new();
     let mut sequence = String::new();
 
@@ -54,34 +58,3 @@ fn parse_fasta<T: AsRef<Path>>(filename: T) -> io::Result<()> {
     Ok(())
 }
 
-use clap::Arg;
-
-fn main() -> std::io::Result<()> {
-    let cli = clap::Command::new("genome_parser");
-    let input_arg = Arg::new("input");
-    let input_arg = input_arg.help("Input filename in fasta format.").short('i').long("input").required(true);
-    let cli = cli.arg(input_arg).arg_required_else_help(true);
-
-    let matches = cli.get_matches();
-    let fasta_file = matches.get_one::<String>("input").unwrap();
-
-    parse_fasta(fasta_file)?; // This should call the parse_fasta function
-    
-
-    Ok(())
-}
-#[cfg(test)]
-mod tests {
-    use super::*;
-    #[test]
-    fn test_gccontent() {
-        let x = calculates_gc_content("ATCG");
-        assert_eq!(x, 50.0);
-    }
-    #[test]
-    #[should_panic]
-    fn test_empty_string(){
-        let _x = calculates_gc_content("");
-    
-    }
-}

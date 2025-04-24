@@ -5,3 +5,11 @@ edition = "2021"
 
 [dependencies]
 clap = "4.5.29"
+rust-htslib = "0.49.0"
+anyhow = "1.0.0"
+flate2 = "1.0.0"
+bio = "0.40.0"
+
+[lib]
+name = "genome_parser"
+path = "src/lib.rs"

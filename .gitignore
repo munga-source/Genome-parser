@@ -1,1 +1,19 @@
-/target
+# Ignore build output and target directory everywhere
+target/
+
+# Ignore the data folder everywhere
+data/
+
+# Ignore temporary and log files
+*.log
+*.tmp
+
+# Ignore environment files, system files, and other unnecessary files
+.env
+.DS_Store
+
+# Ignore Cargo.lock only for libraries (you can keep it for executables)
+#Cargo.lock
+
+# Ignore compiled libraries
+*.rlib
