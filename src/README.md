@@ -1,4 +1,4 @@
-# genome_parser
+# Genome_parser
 
 A command-line tool written in Rust for summarizing genomic data in **FASTA**, **FASTQ**, and **BAM** formats.
 
@@ -53,7 +53,7 @@ chmod +x genome_parser
 
  ## Usage
 
-Basic usage:
+ Basic usage:
 
 ```bash
 ./genome_parser -i <input_file>
@@ -73,5 +73,3 @@ Example:
 ```bash
 ./genome_parser -i data/sample.fastq.gz
 ```
-
-
