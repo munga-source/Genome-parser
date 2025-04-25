@@ -45,7 +45,7 @@ You can download precompiled binaries from the [Releases page](https://github.co
 
 #### On Linux:
 ```bash
-wget https://github.com/munga-source/Genome-parser/releases/tag/v0.1.0/genome_parser-linux.tar.gz
+wget wget https://github.com/munga-source/Genome-parser/releases/download/v0.1.0/genome_parser-linux.tar.gz
 tar -xzvf genome_parser-linux.tar.gz
 chmod +x genome_parser-linux
 ./genome_parser-linux -i your_file.fastq.gz
