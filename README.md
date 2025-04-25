@@ -27,17 +27,17 @@ cd genome_parser
 ```
 1. Build the release binary:
 
-```bash
-cargo build --release
-
-```
+    ```bash
+    cargo build --release
+    
+    ```
 
 2. The compiled binary will be located at:
 
-```bash
-target/release/genome_parser
-
-```
+    ```bash
+    target/release/genome_parser
+    
+    ```
 
 ### Option 2: Precompiled Binary for macOS
 
@@ -73,13 +73,13 @@ You can download precompiled binaries from the [Releases page](https://github.co
 
 1. Basic usage:
 
-```bash
-./genome_parser -i <input_file>
-```
+    ```bash
+    ./genome_parser -i <input_file>
+    ```
 
 
 2. Example:
 
-```bash
-./genome_parser -i data/sample.fastq.gz
-```
+    ```bash
+    ./genome_parser -i data/sample.fastq.gz
+    ```
