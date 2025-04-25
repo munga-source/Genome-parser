@@ -68,7 +68,6 @@ You can download precompiled binaries from the [Releases page](https://github.co
     ```
 
 
-```
 
  ## Usage
 
@@ -76,7 +75,6 @@ You can download precompiled binaries from the [Releases page](https://github.co
 
 ```bash
 ./genome_parser -i <input_file>
-
 ```
 
 
