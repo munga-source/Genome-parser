@@ -2,7 +2,7 @@
 
 A command-line tool written in Rust for summarizing genomic data in **FASTA**, **FASTQ**, and **BAM** formats.
 
-## ✨ Features
+##  Features
 
 - Parses `.fasta`, `.fastq`/`.fastq.gz`, and `.bam` files
 - Reports basic stats like:
@@ -12,13 +12,9 @@ A command-line tool written in Rust for summarizing genomic data in **FASTA**, *
   - Average MAPQ
 - Simple CLI interface
 
-<<<<<<< HEAD
-## Installation
-=======
----
 
-## 🚀 Installation
->>>>>>> 93a6b65 (Update README with usage and precompile instructions)
+## Installation
+
 
 ### Option 1: Build from Source (requires Rust)
 
