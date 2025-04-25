@@ -71,12 +71,12 @@ You can download precompiled binaries from the [Releases page](https://github.co
 1. Basic usage:
 
     ```bash
-    ./genome_parser -i <input_file>
+    ./genome_parser-macos -i <input_file>
     ```
 
 
 2. Example:
 
     ```bash
-    ./genome_parser -i data/sample.fastq.gz
+    ./genome_parser-macos -i data/sample.fastq.gz
     ```
