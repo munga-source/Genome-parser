@@ -51,7 +51,7 @@ chmod +x genome_parser
 
 ```
 
-🧪 Usage
+ Usage
 
 Basic usage:
 
