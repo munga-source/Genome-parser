@@ -39,7 +39,7 @@ target/release/genome_parser
 
 ```
 
-Option 2: Use Precompiled Binary
+### Option 2: Use Precompiled Binary
 
 Precompiled binaries for Linux, macOS, and Windows will be available in the Releases section.
 
@@ -51,7 +51,7 @@ chmod +x genome_parser
 
 ```
 
- Usage
+ ## Usage
 
 Basic usage:
 
