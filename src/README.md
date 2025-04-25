@@ -4,7 +4,7 @@ A command-line tool written in Rust for summarizing genomic data in **FASTA**, *
 
 ##  Features
 
-- Parses `.fasta`, `.fastq`/`.fastq.gz`, and `.bam` files
+- Parses `.fasta`/`.fa`, `.fastq`/`.fastq.gz`, and `.bam` files
 - Reports basic stats like:
   - GC content
   - Sequence length
@@ -60,11 +60,6 @@ chmod +x genome_parser
 
 ```
 
-Supported Input File Types:
-
-.bam
-.fastq, .fastq.gz
-.fasta, .fa
 
 Example:
 
