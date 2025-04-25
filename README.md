@@ -25,14 +25,14 @@ git clone https://github.com/munga-source/genome_parser.git
 cd genome_parser
 
 ```
-Build the release binary:
+1. Build the release binary:
 
 ```bash
 cargo build --release
 
 ```
 
-The compiled binary will be located at:
+2. The compiled binary will be located at:
 
 ```bash
 target/release/genome_parser
@@ -71,14 +71,14 @@ You can download precompiled binaries from the [Releases page](https://github.co
 
  ## Usage
 
- Basic usage:
+1. Basic usage:
 
 ```bash
 ./genome_parser -i <input_file>
 ```
 
 
-Example:
+2. Example:
 
 ```bash
 ./genome_parser -i data/sample.fastq.gz
