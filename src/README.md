@@ -62,11 +62,9 @@ chmod +x genome_parser
 
 Supported Input File Types:
 
-    .bam
-
-    .fastq, .fastq.gz
-
-    .fasta, .fa
+.bam
+.fastq, .fastq.gz
+.fasta, .fa
 
 Example:
 
