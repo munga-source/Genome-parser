@@ -18,25 +18,22 @@ A command-line tool written in Rust for summarizing genomic data in **FASTA**, *
 
 ### Option 1: Build from Source (requires Rust)
 
-Clone the repository:
+1. Clone the repository:
 
-```bash
-git clone https://github.com/munga-source/genome_parser.git
-cd genome_parser
-
-```
-1. Build the release binary:
+    ```bash
+    git clone https://github.com/munga-source/genome_parser.git
+    cd genome_parser
+    ```
+2. Build the release binary:
 
     ```bash
     cargo build --release
-    
     ```
 
-2. The compiled binary will be located at:
+3. The compiled binary will be located at:
 
     ```bash
     target/release/genome_parser
-    
     ```
 
 ### Option 2: Precompiled Binary for macOS
