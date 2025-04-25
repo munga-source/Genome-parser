@@ -39,16 +39,33 @@ target/release/genome_parser
 
 ```
 
-### Option 2: Precompiled Binary
+### Option 2: Precompiled Binary for macOS
 
 You can download precompiled binaries from the [Releases page](https://github.com/munga-source/Genome-parser/releases).
 
-#### On Linux:
-```bash
-wget wget https://github.com/munga-source/Genome-parser/releases/download/v0.1.0/genome_parser-linux.tar.gz
-tar -xzvf genome_parser-linux.tar.gz
-chmod +x genome_parser-linux
-./genome_parser-linux -i your_file.fastq.gz
+- **macOS**: `genome_parser-macos.tar.gz`
+
+#### Example: Downloading the macOS Binary
+
+1. Download the binary:
+    ```bash
+    wget https://github.com/munga-source/Genome-parser/releases/download/v0.1.0/genome_parser-macos.tar.gz
+    ```
+
+2. Extract the archive:
+    ```bash
+    tar -xzvf genome_parser-macos.tar.gz
+    ```
+
+3. Make it executable:
+    ```bash
+    chmod +x genome_parser-macos
+    ```
+
+4. Run the tool:
+    ```bash
+    ./genome_parser-macos --help
+    ```
 
 
 ```
